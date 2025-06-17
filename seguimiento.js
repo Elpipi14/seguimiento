@@ -19,7 +19,7 @@ app.post("/webhook", (req, res) => {
     } else {
       // Pedido inválido
       agent.add("El número ingresado no es válido. Ingrese nuevamente el número de pedido.");
-      agent.add('O escriba "ayuda" y te derivaré con un operador.');
+      agent.add('O escriba "ayuda" y te derivaré con un operador...');
     }
   }
 
