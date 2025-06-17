@@ -1,0 +1,29 @@
+# Node modules
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Runtime
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Env (si lo usás para claves secretas)
+.env
+
+# IDE/editor config
+.vscode/
+.idea/
+*.swp
+
+# Output
+dist/
+build/

@@ -1,0 +1,17 @@
+{
+  "name": "backseguimiento",
+  "version": "1.0.0",
+  "main": "seguimiento.js",
+  "scripts": {
+    "start": "node seguimiento.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "dialogflow-fulfillment": "^0.5.0",
+    "express": "^5.1.0"
+  }
+}
