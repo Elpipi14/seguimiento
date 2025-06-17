@@ -15,7 +15,7 @@ app.post("/webhook", (req, res) => {
       agent.setContext({ name: 'estado_pedido', lifespan: 5 });
       agent.add("Perfecto. Estoy obteniendo el estado del pedido... ¿El pedido fue entregado? (si o no)");
     } else {
-      agent.end("El número ingresado no es válido. Te derivaré con un operador humano.");
+      agent.end("El número ingresado no es válido. Te derivaré con un operador.");
     }
   }
 
