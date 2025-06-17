@@ -12,10 +12,14 @@ app.post("/webhook", (req, res) => {
     const numero = agent.parameters.numeroPedido;
 
     if (numero % 2 === 0) {
+      // Pedido válido
       agent.setContext({ name: 'estado_pedido', lifespan: 5 });
-      agent.add("Perfecto. Estoy obteniendo el estado del pedido... ¿El pedido fue entregado? (si o no)");
+      agent.add("Perfecto. Estoy obteniendo el estado del pedido...");
+      agent.add("¿El pedido fue entregado? (sí o no)");
     } else {
-      agent.end("El número ingresado no es válido. Te derivaré con un operador.");
+      // Pedido inválido
+      agent.add("El número ingresado no es válido. Ingrese nuevamente el número de pedido.");
+      agent.add('O escriba "ayuda" y te derivaré con un operador.');
     }
   }
 
